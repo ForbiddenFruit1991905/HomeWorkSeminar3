@@ -14,7 +14,7 @@ namespace Task_003
     public class Task_003
     {
        public const int MIN = 0;
-        public const int MAX = 100;
+        public const int MAX = 99;
 
         public static void Main(string[] args) {
             System.Console.Write("Введите размерность генерируемого массива: ");
@@ -46,7 +46,7 @@ namespace Task_003
         public static double[] GetArrayWithRandomValue(int size) {
             double[] array = new double[size];
             for(int i = 0; i < size; i++) {
-                array[i] = (new Random().NextDouble()) * (new Random().Next(MIN, MAX));
+                array[i] = (new Random().NextDouble()) + (new Random().Next(MIN, MAX));
             }
             return array;
         }
