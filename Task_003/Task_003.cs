@@ -13,7 +13,7 @@ namespace Task_003
 {
     public class Task_003
     {
-       public const int MIN = 0;
+       public const int MIN = 1;
         public const int MAX = 99;
 
         public static void Main(string[] args) {
